@@ -13,8 +13,6 @@ function App() {
 		fetchData();
 	}, []);
 
-	console.log(data);
-
 	return (
 		<>
 			<Map data={data} />
