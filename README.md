@@ -4,4 +4,4 @@ This project was made by help of Traversy media!
 
 ## Deployed at:
 
-[here](panoramic-size.surge.sh)
+[here](http://panoramic-size.surge.sh/)
