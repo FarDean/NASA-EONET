@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@iconify/react": "^1.1.4",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.2",
-    "mapbox-gl": "^2.1.1",
+    "google-map-react": "^2.1.9",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-mapbox-gl": "^5.1.1",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.0"
   },
@@ -36,5 +36,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@iconify-icons/emojione": "^1.1.0",
+    "@iconify-icons/noto": "^1.1.1"
   }
 }

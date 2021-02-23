@@ -1,13 +1,85 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.map {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+}
+
+.map .desc {
+	position: absolute;
+	top: 20px;
+	left: 14px;
+	z-index: 5;
+	padding: 0.3em 0.5em;
+	outline: none;
+	border: none;
+	background-color: crimson;
+	font-size: 1.2rem;
+	border-radius: 20px;
+}
+
+.map .desc:hover {
+	background-color: rgb(253, 127, 152);
+	transition: background-color 0.3s ease-in-out;
+}
+
+.map .aside {
+	position: absolute;
+	bottom: 20px;
+	left: 10%;
+	width: 80%;
+	border-radius: 15px;
+	font-size: 2.1rem;
+	text-align: center;
+	background-color: rgba(14, 43, 222, 0.5);
+	color: white;
+	z-index: 11;
+	padding-top: 5px;
+	display: none;
+}
+
+.map .aside.active {
+	display: block;
+}
+
+.location-icon {
+	font-size: 2rem;
+	color: red;
+}
+
+.marker {
+	position: relative;
+}
+
+.description-box {
+	position: absolute;
+	bottom: -10;
+	left: 0;
+	width: 400px;
+	min-height: 100px;
+	background-color: aliceblue;
+	color: black;
+	font-size: 1.5rem;
+	padding: 0.5em 1em;
+	border-radius: 15px;
+	display: none;
+	z-index: 4;
+	transition: all 2s ease;
+}
+
+.description-box div:first-child {
+	margin-bottom: 15px;
+}
+
+.description-box div span {
+	color: aqua;
+	font-size: 2rem;
+	font-weight: 800;
+}
+
+.active {
+	display: block;
 }
